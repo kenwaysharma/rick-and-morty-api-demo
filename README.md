@@ -25,7 +25,7 @@ A React application that allows users to view and paginate through characters fr
  - React
  -  Axios
  -  API Used 🌐
-   - Rick and Morty API
+       - Rick and Morty API
 
 
 
