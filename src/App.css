@@ -1,5 +1,29 @@
+/* App.css */
+
 .App {
   text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card img {
+  width: 100%;
+}
+.pagination{
+  display: flex;
+  align-self: center;
+}
+h3 {
+  font-size: 16px;
 }
 
 .App-logo {
@@ -9,15 +33,74 @@
 
 .App-header {
   background-color: #222;
-  padding: 20px;
+  padding-top: 10px;
   color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-intro {
   font-size: large;
 }
-input::placeholder {
+.errorMsg{
+  color: #d64949;
+}
+input {
+  width: 50%;
+  height: 56px;
+  border-radius: 4px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 20px;
   color: white;
-  
 }
 
+input::placeholder {
+  color: white;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 16px;
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  display: inline-block;
+  transition: all 0.25s;
+}
+
+.buttonStyle {
+  background: none;
+  color: white;
+  border: 1px solid white;
+}
+
+.buttonStyle2 {
+  background: none;
+  color: black;
+  border: 1px solid black;
+}
+
+.content {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 25px 50px 25px 50px;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 40% !important;
+  }
+  
+  .content {
+    margin: 16px 25px 16px 25px !important;
+  }
+  
+  input {
+    height: 40px !important;
+  }
+}
