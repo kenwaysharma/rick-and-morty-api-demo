@@ -21,7 +21,7 @@ A React application that allows users to view and paginate through characters fr
     ```npm install```
 3. Run the app
     ```npm start```
-> Technologies Used 💻
+## Technologies Used 💻
  - React
  -  Axios
  -  API Used 🌐
